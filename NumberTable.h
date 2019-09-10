@@ -1,6 +1,7 @@
 #pragma once
 #include <Windows.h>
 
+//Size:256*4 Bytes
 DWORD NumberTables[]=
 {
    0x39CB44B8, 0x23754F67, 0x5F017211, 0x3EBB24DA, 0x351707C6, 0x63F9774B, 0x17827288, 0x0FE74821,
