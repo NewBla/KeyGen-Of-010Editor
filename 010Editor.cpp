@@ -1,6 +1,5 @@
 #include <iostream>
 #include<Windows.h>
-#include <TlHelp32.h>
 #include "NumberTable.h"
 using namespace std;
 
@@ -23,7 +22,7 @@ DWORD MagicCalc(PCHAR UserName, BYTE UserCounts)
 
 	if (Length == 0) return 0;
 
-	DWORD Local4 = 1;//循环计数
+	DWORD Local4 = 1;//脩颅禄路录脝脢媒
 	DWORD EDX = 0;
 	DWORD ECX = 0;
 	DWORD EDI = 0;
@@ -155,7 +154,7 @@ LPSTR KeyGen(PCHAR UserName, BYTE LicenseType,BYTE UserCounts)
 	memcpy_s(Result + 20, 40, KeyString + 16, 4);
 
 
-	return (LPSTR)Result;
+	return Result;
 }
 int main()
 {
