@@ -138,7 +138,9 @@ LPSTR KeyGen(PCHAR UserName, BYTE LicenseType,BYTE UserCounts)
 
 	j = 0;
 	LPSTR Result = (LPSTR)malloc(40);
+	if (Result == NULL) return 0;
 	memset(Result, 0, 40);
+	
 
 	memcpy_s(Result, 40, KeyString, 4);
 	Result[4] = 0x2D;//ASCII "-"
@@ -189,7 +191,11 @@ int main()
 	}
 
 
-	printf("Your License Key Is:  %s", License);
+	if (License != NULL)
+	{
+		printf("Your License Key Is:  %s", License);
+		free(License);
+	}
 	cout << endl;
 	system("pause");
 	return 0;
