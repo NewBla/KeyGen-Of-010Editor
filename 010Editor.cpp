@@ -34,23 +34,24 @@ DWORD MagicCalc(PCHAR UserName, BYTE UserCounts)
 		{
 			AL -= 0x20;
 		}
-		EDX = 0;
+		
+		
 		EDX = Local7 & 0xFF;
 		EDX = NumberTables[EDX];
 
-		ECX = 0;
+		
 		ECX = Local5 & 0xFF;
 		EDX += NumberTables[ECX];
 
-		ECX = 0;
+		
 		ECX = Local6 & 0xFF;
 		EDX += NumberTables[ECX];
 
-		ECX = 0;
+		
 		ECX = AL;
 		EDI = NumberTables[ECX+0xD];
 
-		ECX = 0;
+		
 		ECX = AL;
 		ECX= NumberTables[ECX];
 		ECX += Local3;
